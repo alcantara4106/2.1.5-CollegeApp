@@ -13,13 +13,15 @@ import android.widget.TextView;
 
 public class FamilyMemberFragment extends android.support.v4.app.Fragment {
     TextView mFirstName;
-    TextView mLastName; //make an EditText for these too?
+    EditText sFirstName;
+    TextView mLastName;
+    EditText sLastName;
     FamilyMember daddy;
 
     daddy.setFirstName("John");
     daddy.setLastName("Johnson");
 
-    private String firstNameThing = (String)findViewById(R.id.firstName);
+    mFirstName = setText(R.id.firstName);
 
     public View onCreateView(LayoutInflater inflater, ViewGroup group, Bundle bundle){
         super.onCreateView(inflater, group, bundle);
