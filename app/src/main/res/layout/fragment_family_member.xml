@@ -12,7 +12,29 @@
 <TextView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:text="First name view"
     android:id="@+id/profileFirstNameView"
+    />
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="Last name view"
+    android:id="@+id/profileLastNameView"
+    />
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="Edit first name view"
+    android:id="@+id/profileEditFirstNameView"
+    />
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="Edit last name view"
+    android:id="@+id/profileEditLastNameView"
     />
 
 </LinearLayout>
