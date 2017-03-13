@@ -7,21 +7,18 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.TextView;
 
+
 /**
  * Created by alcantara94106 on 3/2/2017.
  */
 
 public class FamilyMemberFragment extends android.support.v4.app.Fragment {
-    TextView mFirstName;
-    EditText sFirstName;
-    TextView mLastName;
-    EditText sLastName;
-    FamilyMember daddy;
+    private TextView mFirstName;
+    private EditText mEditFirstName;
+    private TextView mLastName;
+    private EditText mEditLastName;
 
-    daddy.setFirstName("John");
-    daddy.setLastName("Johnson");
-
-    mFirstName = setText(R.id.firstName);
+    mFirstName = (TextView)rootView.findViewById(R.id.profileFirstNameView);
 
     public View onCreateView(LayoutInflater inflater, ViewGroup group, Bundle bundle){
         super.onCreateView(inflater, group, bundle);
