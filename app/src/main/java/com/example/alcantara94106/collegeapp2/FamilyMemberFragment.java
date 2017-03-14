@@ -18,7 +18,7 @@ public class FamilyMemberFragment extends android.support.v4.app.Fragment {
     private TextView mLastName;
     private EditText mEditLastName;
 
-    private FamilyMember daddy;
+    private FamilyMember daddy; //#9, probably incorrect
     //daddy.setFirstName("Bob")
 
 
@@ -26,11 +26,11 @@ public class FamilyMemberFragment extends android.support.v4.app.Fragment {
         super.onCreateView(inflater, group, bundle);
         View rootView = inflater.inflate(R.layout.fragment_family_member, group, false);
 
-        mFirstName = (TextView)rootView.findViewById(R.id.profileFirstNameView);
-        mLastName = (TextView)rootView.findViewById(R.id.profileLastNameView);
+        mFirstName = (TextView)rootView.findViewById(R.id.familyMemberFirstNameView);
+        mLastName = (TextView)rootView.findViewById(R.id.familyMemberLastNameView);
 
-        mEditFirstName = (EditText)rootView.findViewById(R.id.profileEditFirstNameView);
-        mEditLastName = (EditText)rootView.findViewById(R.id.profileEditLastNameView);
+        mEditFirstName = (EditText)rootView.findViewById(R.id.familyMemberEditFirstNameView);
+        mEditLastName = (EditText)rootView.findViewById(R.id.familyMemberEditLastNameView);
 
         mFirstName.setText("John");
         mLastName.setText("Cena");

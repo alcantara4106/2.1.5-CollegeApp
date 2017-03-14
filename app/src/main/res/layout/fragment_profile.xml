@@ -5,20 +5,20 @@
 
 
 <TextView
-    android:id="@+id/textView3"
+    android:id="@+id/textView2"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="Family Member Content"/>
+    android:text="Profile Content"/>
 
 <TextView
-    android:id="@+id/familyMemberFirstNameView"
+    android:id="@+id/profileFirstNameView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="First name view"
     />
 
 <TextView
-    android:id="@+id/familyMemberLastNameView"
+    android:id="@+id/profileLastNameView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="Last name view"
@@ -26,14 +26,14 @@
 
 <EditText
 android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:id="@+id/familyMemberEditFirstNameView"
+android:layout_height="match_parent"
+android:id="@+id/profileEditFirstNameView"
 />
 
 <EditText
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/familyMemberEditLastNameView"
+    android:layout_height="match_parent"
+    android:id="@+id/profileEditLastNameView"
     />
 
 </LinearLayout>
