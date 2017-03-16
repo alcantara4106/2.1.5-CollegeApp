@@ -19,7 +19,7 @@ public class FamilyMemberFragment extends android.support.v4.app.Fragment {
     private EditText mEditLastName;
 
     private FamilyMember daddy; //#9, probably incorrect
-    //daddy.setFirstName("Bob")
+    //daddy.setFirstName("Bob");
 
 
     public View onCreateView(LayoutInflater inflater, ViewGroup group, Bundle bundle){
