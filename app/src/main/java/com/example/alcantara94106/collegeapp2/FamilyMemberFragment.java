@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -17,9 +18,14 @@ public class FamilyMemberFragment extends android.support.v4.app.Fragment {
     private EditText mEditFirstName;
     private TextView mLastName;
     private EditText mEditLastName;
+    private Button mSubmitButton;
 
     private FamilyMember daddy; //#9, probably incorrect
     //daddy.setFirstName("Bob");
+
+    mSubmitButon = (Button) rootView.findViewById(R.id.familyMemberSubmitButton);
+
+    mSubmitButton.setOnClickListener()
 
 
     public View onCreateView(LayoutInflater inflater, ViewGroup group, Bundle bundle){
@@ -37,6 +43,5 @@ public class FamilyMemberFragment extends android.support.v4.app.Fragment {
 
         return rootView;
     }
-
 
 }
