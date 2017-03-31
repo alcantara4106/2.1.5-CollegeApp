@@ -23,14 +23,21 @@ public class FamilyMemberFragment extends android.support.v4.app.Fragment {
     private FamilyMember daddy; //#9, probably incorrect
     //daddy.setFirstName("Bob");
 
-    mSubmitButon = (Button) rootView.findViewById(R.id.familyMemberSubmitButton);
 
-    mSubmitButton.setOnClickListener()
 
 
     public View onCreateView(LayoutInflater inflater, ViewGroup group, Bundle bundle){
         super.onCreateView(inflater, group, bundle);
         View rootView = inflater.inflate(R.layout.fragment_family_member, group, false);
+
+        mSubmitButton = (Button) rootView.findViewById(R.id.familyMemberSubmitButton);
+        mSubmitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mFirstName.setText(mEditFirstName.getText());
+                mLastName.setText(mEditLastName.getText());
+            }
+        });
 
         mFirstName = (TextView)rootView.findViewById(R.id.familyMemberFirstNameView);
         mLastName = (TextView)rootView.findViewById(R.id.familyMemberLastNameView);
