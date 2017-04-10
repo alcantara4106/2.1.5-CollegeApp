@@ -13,21 +13,22 @@ import android.widget.TextView;
  * Created by alcantara94106 on 3/2/2017.
  */
 
-public class FamilyMemberFragment extends android.support.v4.app.Fragment {
+public class GuardianFragment extends android.support.v4.app.Fragment {
     private TextView mFirstName;
     private EditText mEditFirstName;
     private TextView mLastName;
     private EditText mEditLastName;
     private Button mSubmitButton;
+    private String occupation;
 
-    private FamilyMember daddy; //#9, probably incorrect
+    //private FamilyMember daddy; //#9, probably incorrect
     //daddy.setFirstName("Bob");
 
     public View onCreateView(LayoutInflater inflater, ViewGroup group, Bundle bundle){
         super.onCreateView(inflater, group, bundle);
-        View rootView = inflater.inflate(R.layout.fragment_family_member, group, false);
+        View rootView = inflater.inflate(R.layout.fragment_guardian, group, false);
 
-        mSubmitButton = (Button) rootView.findViewById(R.id.familyMemberSubmitButton);
+        mSubmitButton = (Button) rootView.findViewById(R.id.guardianSubmitButton);
         mSubmitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,13 +37,13 @@ public class FamilyMemberFragment extends android.support.v4.app.Fragment {
             }
         });
 
-        mFirstName = (TextView)rootView.findViewById(R.id.familyMemberFirstNameView);
-        mLastName = (TextView)rootView.findViewById(R.id.familyMemberLastNameView);
+        mFirstName = (TextView)rootView.findViewById(R.id.guardianFirstNameView);
+        mLastName = (TextView)rootView.findViewById(R.id.guardianLastNameView);
 
-        mEditFirstName = (EditText)rootView.findViewById(R.id.familyMemberEditFirstNameView);
-        mEditLastName = (EditText)rootView.findViewById(R.id.familyMemberEditLastNameView);
+        mEditFirstName = (EditText)rootView.findViewById(R.id.guardianEditFirstNameView);
+        mEditLastName = (EditText)rootView.findViewById(R.id.guardianEditLastNameView);
 
-        mFirstName.setText("John");
+        mFirstName.setText("Mommy");
         mLastName.setText("Cena");
 
         return rootView;

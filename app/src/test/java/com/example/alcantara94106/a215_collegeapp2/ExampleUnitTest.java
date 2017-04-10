@@ -1,4 +1,4 @@
-package org.pltw.examples.collegeapp;
+package com.example.alcantara94106.a215_collegeapp2;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package org.pltw.examples.collegeapp;
+package com.example.alcantara94106.a215_collegeapp2;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("org.pltw.examples.collegeapp", appContext.getPackageName());
+        assertEquals("com.example.alcantara94106.a215_collegeapp2", appContext.getPackageName());
     }
 }
