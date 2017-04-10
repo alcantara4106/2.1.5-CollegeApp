@@ -35,6 +35,7 @@ public class ProfileFragment extends android.support.v4.app.Fragment {
                 mLastName.setText(mEditLastName.getText());
             }
         });
+
         mDateButton = (Button) rootView.findViewById(R.id.profileDateButton);
         mDateButton.setOnClickListener(new View.OnClickListener() {
             @Override
